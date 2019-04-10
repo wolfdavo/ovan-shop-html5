@@ -1,0 +1,99 @@
+.header
+  background-image: url('./header-black.jpg')
+  background-attachment: fixed
+  background-size: cover
+  height: 100vh
+  display: flex
+
+.header-logo
+  max-width: 450px
+  height: 80vh
+  align-self: center
+  margin: auto
+
+.dark-section
+  background-image: url('./dark-fabric.jpg')
+  background-repeat: no-repeat
+  background-size: cover
+  width: 100%
+  height: auto
+  display: flex
+  flex-direction: column
+  flex-wrap: wrap
+  font-family: 'main font'
+  color: #eaeaea
+  text-align: center
+
+.textbody
+  align-self: center
+  max-width: 768px
+  padding: 50px
+  h1
+    font-size: 2.4rem
+  p
+    font-size: 1.4rem
+
+.round-btn
+  height: 200px
+  width: 200px
+  color: #eaeaea
+  background-color: transparent
+  border: 2px solid #eaeaea
+  border-radius: 50%
+  outline: none
+  font-family: 'main font'
+  font-size: 1.5rem
+  padding: 40px
+  align-self: center
+  margin: auto
+  margin-bottom: 50px
+  transition: 0.2s ease-in-out
+  &:hover
+    filter: drop-shadow(0 0 0.75rem #eaeaea)
+
+.thinner
+  font-weight: normal
+
+
+
+.myriad-wrapper
+  display: flex
+  height: 281px
+  margin-bottom: 248px
+
+.myriad-title
+  color: #eaeaea
+  z-index: 50
+  font-family: 'main font'
+  margin: auto
+  text-align: center
+  font-weight: 100
+  background-color: #000
+  border-radius: 50px
+  padding: 20px
+  h2
+    margin: 0
+
+.myriad-black a
+  background-color: #000
+
+.myriad-white a
+  background-color: #fff
+
+.myriad-black, .myriad-white
+  width: 50%
+  height: 281px
+
+.myriad-black
+  position: absolute
+  left: 0
+  transition: 0.2s ease-in-out
+  &:hover
+    filter: brightness(0.3) grayscale(100%)
+
+.myriad-white
+  position: absolute
+  right: 0
+  transition: 0.2s ease-in-out
+  &:hover
+    filter: brightness(4) grayscale(100%)
