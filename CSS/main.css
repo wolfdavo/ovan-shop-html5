@@ -1,10 +1,49 @@
 @font-face {
   font-family: "main font";
-  src: url("./PoiretOne-Regular.ttf") format("truetype");
+  src: url("../assets/global/PoiretOne-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
+.footer {
+  position: fixed;
+  bottom: 0;
+  height: 250px;
+  width: 100%;
+  background-image: url("../assets/global/header-black.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -50;
+  display: flex;
+  flex-direction: column; }
+
+.footer-logo {
+  width: 200px;
+  height: auto;
+  align-self: center;
+  margin-top: 65px; }
+
+.center-buttons {
+  text-align: center;
+  padding-top: 20px; }
+
+.contact-icon {
+  margin: 20px; }
+
+.fab {
+  color: #eaeaea; }
+
+.copyright {
+  color: #eaeaea;
+  opacity: 0.6;
+  display: flex;
+  align-self: center;
+  position: absolute;
+  bottom: 8px; }
+  .copyright a {
+    color: #eaeaea; }
+
 .header {
-  background-image: url("./header-black.jpg");
+  background-image: url("../assets/global/header-black.jpg");
   background-attachment: fixed;
   background-size: cover;
   height: 100vh;
@@ -17,7 +56,7 @@
   margin: auto; }
 
 .dark-section {
-  background-image: url("./dark-fabric.jpg");
+  background-image: url("../assets/about/dark-fabric.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
