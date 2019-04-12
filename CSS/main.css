@@ -29,6 +29,10 @@
 .contact-icon {
   margin: 20px; }
 
+a:hover {
+  color: #eaeaea;
+  text-decoration: none; }
+
 .fab {
   color: #eaeaea; }
 
@@ -41,6 +45,71 @@
   bottom: 8px; }
   .copyright a {
     color: #eaeaea; }
+
+.navbar {
+  color: #000;
+  position: fixed;
+  transition: 0.2s ease-in-out;
+  z-index: 100;
+  height: 100vh;
+  width: 200px; }
+
+.collapsed {
+  right: 0;
+  transform: translateX(185px); }
+
+.expanded {
+  right: 0; }
+
+.toggle-tab {
+  background-color: #eaeaea;
+  padding: 30px;
+  position: relative;
+  right: 24px;
+  border-radius: 30px;
+  height: 93px;
+  transition: 0.2s ease-in-out; }
+  .toggle-tab:hover {
+    transform: translateX(-5px); }
+
+.arrow {
+  border: solid #000;
+  border-width: 0 3px 3px 0;
+  display: flex;
+  padding: 3px;
+  position: relative;
+  right: 17px;
+  top: 13px; }
+
+.close {
+  transform: rotate(-45deg); }
+
+.open {
+  transform: rotate(135deg); }
+
+.navbar-list-invisible {
+  display: none; }
+
+.navbar-list-visible {
+  position: fixed;
+  background-color: #eaeaea;
+  height: 100vh;
+  list-style: none;
+  padding: 30px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+
+.nav-item {
+  line-height: 70px;
+  color: #000;
+  font-family: "main font";
+  transition: 0.2s ease-in-out;
+  display: block; }
+  .nav-item:hover {
+    color: #000;
+    transform: scale(1.02); }
 
 .header {
   background-image: url("../assets/global/header-black.jpg");
