@@ -111,12 +111,26 @@ a:hover {
     color: #000;
     transform: scale(1.02); }
 
+.white-btn {
+  background-color: #eaeaea;
+  border-radius: 15px;
+  color: #000;
+  display: flex; }
+
+.modal-content {
+  background-color: #eaeaea;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  font-family: main font; }
+
 .header {
   background-image: url("../assets/global/header-black.jpg");
   background-attachment: fixed;
   background-size: cover;
   height: 100vh;
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap; }
 
 .header-logo {
   max-width: 450px;
@@ -170,7 +184,8 @@ a:hover {
 .myriad-wrapper {
   display: flex;
   height: 281px;
-  margin-bottom: 248px; }
+  margin-bottom: 248px;
+  background-color: #eaeaea; }
 
 .myriad-title {
   color: #eaeaea;
@@ -208,5 +223,17 @@ a:hover {
   transition: 0.2s ease-in-out; }
   .myriad-white:hover {
     filter: brightness(4) grayscale(100%); }
+
+.coming-soon {
+  text-align: center;
+  margin: auto;
+  font-family: "main font";
+  color: #eaeaea;
+  padding: 20px; }
+
+.auction-wrapper {
+  display: flex;
+  text-align: center;
+  flex-direction: column; }
 
 /*# sourceMappingURL=main.css.map */
