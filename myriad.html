@@ -3,11 +3,36 @@
 
 <?php include('./includes/head.html'); ?>
 
-  <body>
-    <?php include('./includes/navbar.html'); ?>
+<body>
+  <?php include('./includes/navbar.html'); ?>
 
+  <header class="myriad-header header">
+    <h1>Myriad Collection</h1>
+    <small>/ˈmirēəd/ <i>adjective</i> "indefinitely great in number; innumerable."</small>
+  </header>
 
+  <div class="myriad-gradient">
 
-    <?php include('./includes/footer.html'); ?>
-  </body>
+    <div class="myriad-range">
+      <div class="myriad-black">
+        <img class="markup-img" src="./assets/myriad/myriad-black.png" alt="Ovan Myriad White">
+        <form class="size-quantity" action="./JS/orders.js" method="post">
+          <select name="size">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="2XL">2XL</option>
+          </select>
+        </form>
+      </div>
+      <div class="myriad-white">
+        <img class="markup-img" src="./assets/myriad/myriad-white.png" alt="Ovan Myriad Black">
+      </div>
+    </div>
+  </div>
+
+  <?php include('./includes/footer.html'); ?>
+</body>
+
 </html>

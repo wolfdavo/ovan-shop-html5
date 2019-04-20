@@ -25,6 +25,20 @@
   color: #eaeaea
   text-align: center
 
+.eco-section
+  background-image: url('../assets/about/eco-section.jpg')
+  background-repeat: no-repeat
+  background-size: cover
+  background-attachment: fixed
+  width: 100%
+  height: auto
+  display: flex
+  flex-direction: row
+  font-family: 'main font'
+  color: #eaeaea
+  flex-wrap: wrap
+
+
 .textbody
   align-self: center
   max-width: 768px
@@ -55,47 +69,41 @@
 .thinner
   font-weight: normal
 
+.shop-ctas
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  margin-bottom: 248px
+  justify-content: space-around
 
-
-.myriad-wrapper
+.myriad-cta-wrapper
   display: flex
   height: 281px
-  margin-bottom: 248px
   background-color: #eaeaea
+  flex: 1
 
-.myriad-title
+.auction-cta-wrapper
+  display: flex
+  height: 281px
+  background-color: #000
+  flex: 1
+
+.cta-title
   color: #eaeaea
   z-index: 50
   font-family: 'main font'
   margin: auto
   text-align: center
-  font-weight: 100
-  background-color: #000
-  border-radius: 50px
-  padding: 20px
-  h2
-    margin: 0
 
-.myriad-black a
-  background-color: #000
+.cta-btn
+  font-size: 3rem
+  small
+    font-size: 1rem
 
-.myriad-white a
-  background-color: #fff
-
-.myriad-black, .myriad-white
-  width: 50%
-  height: 281px
-
-.myriad-black
-  position: absolute
-  left: 0
-  transition: 0.2s ease-in-out
+.dark
+  color: #000
   &:hover
-    filter: brightness(0.3) grayscale(100%)
+    color: #000
 
-.myriad-white
-  position: absolute
-  right: 0
-  transition: 0.2s ease-in-out
-  &:hover
-    filter: brightness(4) grayscale(100%)
+.light
+  color: #eaeaea
