@@ -16,18 +16,44 @@
     <div class="myriad-range">
       <div class="myriad-black">
         <img class="markup-img" src="./assets/myriad/myriad-black.png" alt="Ovan Myriad White">
-        <form class="size-quantity" action="./JS/orders.js" method="post">
-          <select name="size">
+
+        <div class="white-text myriad-description">
+          <p><i>Sophisticated, elegant, and distinguished. Made from 60% fair trade organic cotton, 40% recycled rPET. Each shirt keeps 4+ plastic bottles from polluting our only planet.</i></p>
+        </div>
+
+        <form name="black" class="size-quantity" action="./JS/orders/add_black.js" method="post">
+          <select id="size" class="black dropdown" name="size">
             <option value="S">S</option>
             <option value="M">M</option>
             <option value="L">L</option>
             <option value="XL">XL</option>
             <option value="2XL">2XL</option>
           </select>
+          <input id="quantity" class="black quantity" type="number" name="quantity" value="1">
+          <input class="black btn" type="submit" value="Add to cart">
         </form>
+
+
       </div>
       <div class="myriad-white">
         <img class="markup-img" src="./assets/myriad/myriad-white.png" alt="Ovan Myriad Black">
+
+        <div class="black-text myriad-description">
+          <p><i>Clean, sharp, and universal. Made from 60% fair trade organic cotton, 40% recycled rPET. Each shirt keeps 4+ plastic bottles from polluting our only planet.</i></p>
+        </div>
+
+        <form name="white" class="size-quantity" action="./JS/orders/add_white.js" method="post">
+          <select id="size" class="white dropdown" name="size">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="2XL">2XL</option>
+          </select>
+          <input id="quantity" class="white quantity" type="number" name="quantity" value="1">
+          <input class="white btn" type="submit" value="Add to cart">
+        </form>
+
       </div>
     </div>
   </div>
